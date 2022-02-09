@@ -14,6 +14,7 @@ body {
     color: #eee;
     background-color: #222;
     /* background-color: #60b347; */
+    overflow-x: hidden;
 }
 
 
@@ -31,6 +32,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -100px;
 }
 
 .left {
@@ -121,10 +128,13 @@ h1 {
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 600px) {
     main {
         display: flex;
         flex-direction: column;
+    }
+    footer {
+        margin-top: 200px;
     }
     .left {
         margin-top: 75%;
